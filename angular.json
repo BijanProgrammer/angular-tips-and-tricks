@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "boilera": {
+        "angular-tips-and-tricks": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -20,7 +20,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/boilera",
+                        "outputPath": "dist/angular-tips-and-tricks",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -67,10 +67,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "boilera:build:production"
+                            "browserTarget": "angular-tips-and-tricks:build:production"
                         },
                         "development": {
-                            "browserTarget": "boilera:build:development"
+                            "browserTarget": "angular-tips-and-tricks:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "boilera:build"
+                        "browserTarget": "angular-tips-and-tricks:build"
                     }
                 },
                 "test": {
@@ -103,7 +103,7 @@
             }
         }
     },
-    "defaultProject": "boilera",
+    "defaultProject": "angular-tips-and-tricks",
     "cli": {
         "defaultCollection": "@angular-eslint/schematics"
     }
