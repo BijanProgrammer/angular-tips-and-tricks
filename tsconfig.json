@@ -16,7 +16,13 @@
         "importHelpers": true,
         "target": "es2017",
         "module": "es2020",
-        "lib": ["es2018", "dom"]
+        "lib": ["es2018", "dom"],
+        // [TIP][CUSTOM PATH]
+        "paths": {
+            "@components": ["src/app/services"],
+            "@services": ["src/app/components"],
+            "@prettier": ["node_modules/prettier/esm/parser-angular.mjs"]
+        }
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
