@@ -1,4 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
+import {ConsoleService} from '@services/console.service';
 
 export enum NumberToPipeOutput {
     DECIMAL,
@@ -10,7 +11,10 @@ export enum NumberToPipeOutput {
     name: 'numberTo',
 })
 export class NumberToPipe implements PipeTransform {
-    public transform(n: number, output: NumberToPipeOutput, padMaxLength: number = 0): string {
+    public constructor(private consoleService: ConsoleService) {}
+
+    public transform(n: number, output: NumberToPipeOutput, padMaxLength: number = 0, log: boolean = false): string {
+        if (log) this.consoleService.logPipe();
         return NumberToPipe.transformToOutput(n, output).padStart(padMaxLength, '0');
     }
 

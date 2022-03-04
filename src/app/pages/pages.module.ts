@@ -13,6 +13,8 @@ import {CustomPathsComponent} from './custom-paths/custom-paths.component';
 import {CustomErrorHandlingComponent} from './custom-error-handling/custom-error-handling.component';
 import {VirtualScrollComponent} from './virtual-scroll/virtual-scroll.component';
 import {DynamicRenderComponent} from './dynamic-render/dynamic-render.component';
+import {GoodOldPipeComponent} from './good-old-pipe/good-old-pipe.component';
+import {GoodOldPipeChildComponent} from './good-old-pipe/good-old-pipe-child/good-old-pipe-child.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +23,8 @@ import {DynamicRenderComponent} from './dynamic-render/dynamic-render.component'
         CustomErrorHandlingComponent,
         VirtualScrollComponent,
         DynamicRenderComponent,
+        GoodOldPipeComponent,
+        GoodOldPipeChildComponent,
     ],
     imports: [CommonModule, RouterModule, ScrollingModule, ComponentsModule, ElementsModule, PipesModule],
 })

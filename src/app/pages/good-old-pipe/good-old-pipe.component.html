@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <h2>Good Old Pipe</h2>
+
+    <ul>
+        <li [ngStyle]="consoleService.LOG_GET_STYLE">
+            <h3>Get</h3>
+            <app-good-old-pipe-child [value]="binaryValue"></app-good-old-pipe-child>
+        </li>
+
+        <li [ngStyle]="consoleService.LOG_PIPE_STYLE">
+            <h3>Pipe</h3>
+            <app-good-old-pipe-child
+                [value]="value | numberTo: NumberToPipeOutput.BINARY:0:true"
+            ></app-good-old-pipe-child>
+        </li>
+    </ul>
+
+    <div>
+        random number: <b>{{ randomNumber }}</b>
+    </div>
+</div>

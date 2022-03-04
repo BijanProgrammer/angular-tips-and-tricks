@@ -11,5 +11,6 @@ export class HomeComponent {
         {title: 'Custom Error Handling', link: 'custom-error-handling'},
         {title: 'Virtual Scroll', link: 'virtual-scroll'},
         {title: 'Dynamic Render', link: 'dynamic-render'},
+        {title: 'Good Old Pipe', link: 'good-old-pipe'},
     ];
 }
