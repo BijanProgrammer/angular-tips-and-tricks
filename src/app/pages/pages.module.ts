@@ -15,6 +15,7 @@ import {VirtualScrollComponent} from './virtual-scroll/virtual-scroll.component'
 import {DynamicRenderComponent} from './dynamic-render/dynamic-render.component';
 import {GoodOldPipeComponent} from './good-old-pipe/good-old-pipe.component';
 import {GoodOldPipeChildComponent} from './good-old-pipe/good-old-pipe-child/good-old-pipe-child.component';
+import {TokenizedGlobalObjectsComponent} from './tokenized-global-objects/tokenized-global-objects.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import {GoodOldPipeChildComponent} from './good-old-pipe/good-old-pipe-child/goo
         DynamicRenderComponent,
         GoodOldPipeComponent,
         GoodOldPipeChildComponent,
+        TokenizedGlobalObjectsComponent,
     ],
     imports: [CommonModule, RouterModule, ScrollingModule, ComponentsModule, ElementsModule, PipesModule],
 })

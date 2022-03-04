@@ -12,5 +12,6 @@ export class HomeComponent {
         {title: 'Virtual Scroll', link: 'virtual-scroll'},
         {title: 'Dynamic Render', link: 'dynamic-render'},
         {title: 'Good Old Pipe', link: 'good-old-pipe'},
+        {title: 'Tokenized Global Objects', link: 'tokenized-global-objects'},
     ];
 }
