@@ -9,5 +9,6 @@ export class HomeComponent {
     public demos: {title: string; link: string}[] = [
         {title: 'Custom Paths', link: 'custom-paths'},
         {title: 'Custom Error Handling', link: 'custom-error-handling'},
+        {title: 'Virtual Scroll', link: 'virtual-scroll'},
     ];
 }

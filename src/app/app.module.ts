@@ -1,5 +1,6 @@
 import {ErrorHandler, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppErrorHandler} from './app.error-handler';
@@ -11,7 +12,7 @@ import {PipesModule} from './pipes/pipes.module';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, ComponentsModule, PagesModule, PipesModule],
+    imports: [BrowserModule, ScrollingModule, AppRoutingModule, ComponentsModule, PagesModule, PipesModule],
     providers: [
         // [TIP] Custom Error Handler
         {provide: ErrorHandler, useClass: AppErrorHandler},

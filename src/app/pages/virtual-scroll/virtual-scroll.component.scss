@@ -1,0 +1,28 @@
+.wrapper {
+    align-items: stretch;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        cdk-virtual-scroll-viewport {
+            height: 100vh;
+            max-height: 40rem;
+
+            li {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                gap: 2rem;
+
+                padding: 1rem;
+
+                span {
+                }
+
+                &:nth-of-type(2n) {
+                    background-color: var(--color--primary-fade);
+                }
+            }
+        }
+    }
+}

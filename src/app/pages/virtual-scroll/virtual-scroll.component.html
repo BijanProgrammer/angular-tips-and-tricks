@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <h2>Virtual Scroll</h2>
+    <ul>
+        <cdk-virtual-scroll-viewport [itemSize]="40">
+            <li *cdkVirtualFor="let item of items">
+                <code>{{ item | numberTo: NumberToPipeOutput.DECIMAL:ID_PAD_MAX_LENGTH }}</code>
+                <code>{{ item | numberTo: NumberToPipeOutput.BINARY:BINARY_PAD_MAX_LENGTH }}</code>
+                <code>{{ item | numberTo: NumberToPipeOutput.HEX:HEX_PAD_MAX_LENGTH }}</code>
+            </li>
+        </cdk-virtual-scroll-viewport>
+    </ul>
+</div>
