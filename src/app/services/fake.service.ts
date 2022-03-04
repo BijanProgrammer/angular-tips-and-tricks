@@ -11,4 +11,12 @@ export class FakeService {
     public generateError(): void {
         throw new Error('Oh no! This an error ...');
     }
+
+    public doSomeHeavyTask(title: string): void {
+        console.groupCollapsed(title);
+        for (let i = 0; i < 5_000; i++) {
+            console.log(i);
+        }
+        console.groupEnd();
+    }
 }

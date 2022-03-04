@@ -13,5 +13,6 @@ export class HomeComponent {
         {title: 'Dynamic Render', link: 'dynamic-render'},
         {title: 'Good Old Pipe', link: 'good-old-pipe'},
         {title: 'Tokenized Global Objects', link: 'tokenized-global-objects'},
+        {title: 'Lifecycles', link: 'lifecycles'},
     ];
 }

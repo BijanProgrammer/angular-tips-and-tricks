@@ -16,6 +16,8 @@ import {DynamicRenderComponent} from './dynamic-render/dynamic-render.component'
 import {GoodOldPipeComponent} from './good-old-pipe/good-old-pipe.component';
 import {GoodOldPipeChildComponent} from './good-old-pipe/good-old-pipe-child/good-old-pipe-child.component';
 import {TokenizedGlobalObjectsComponent} from './tokenized-global-objects/tokenized-global-objects.component';
+import {LifecyclesComponent} from './lifecycles/lifecycles.component';
+import {LifecyclesChildComponent} from './lifecycles/lifecycles-child/lifecycles-child.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +29,8 @@ import {TokenizedGlobalObjectsComponent} from './tokenized-global-objects/tokeni
         GoodOldPipeComponent,
         GoodOldPipeChildComponent,
         TokenizedGlobalObjectsComponent,
+        LifecyclesComponent,
+        LifecyclesChildComponent,
     ],
     imports: [CommonModule, RouterModule, ScrollingModule, ComponentsModule, ElementsModule, PipesModule],
 })

@@ -8,6 +8,7 @@ import {VirtualScrollComponent} from './pages/virtual-scroll/virtual-scroll.comp
 import {DynamicRenderComponent} from './pages/dynamic-render/dynamic-render.component';
 import {GoodOldPipeComponent} from './pages/good-old-pipe/good-old-pipe.component';
 import {TokenizedGlobalObjectsComponent} from './pages/tokenized-global-objects/tokenized-global-objects.component';
+import {LifecyclesComponent} from './pages/lifecycles/lifecycles.component';
 
 const routes: Routes = [
     {path: '', pathMatch: 'full', component: HomeComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
     {path: 'dynamic-render', component: DynamicRenderComponent},
     {path: 'good-old-pipe', component: GoodOldPipeComponent},
     {path: 'tokenized-global-objects', component: TokenizedGlobalObjectsComponent},
+    {path: 'lifecycles', component: LifecyclesComponent},
     {path: '*', redirectTo: ''},
 ];
 
