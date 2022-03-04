@@ -202,5 +202,33 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--gap, 4rem);
+}
+
+button {
+    &.primary {
+        background-color: var(--color--primary);
+        color: var(--color--primary-opposite);
+    }
+
+    &.secondary {
+        background-color: var(--color--secondary);
+        color: var(--color--secondary-opposite);
+    }
+
+    &.success {
+        background-color: var(--color--success);
+        color: var(--color--success-opposite);
+    }
+
+    &.warning {
+        background-color: var(--color--warning);
+        color: var(--color--warning-opposite);
+    }
+
+    &.danger {
+        background-color: var(--color--danger);
+        color: var(--color--danger-opposite);
+    }
 }

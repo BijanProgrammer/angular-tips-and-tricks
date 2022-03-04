@@ -6,5 +6,8 @@ import {Component} from '@angular/core';
     styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-    public demos: {title: string; link: string}[] = [{title: 'Custom Paths', link: 'custom-paths'}];
+    public demos: {title: string; link: string}[] = [
+        {title: 'Custom Paths', link: 'custom-paths'},
+        {title: 'Custom Error Handling', link: 'custom-error-handling'},
+    ];
 }

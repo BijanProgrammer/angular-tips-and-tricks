@@ -19,8 +19,8 @@
         "lib": ["es2018", "dom"],
         // [TIP] Custom Path
         "paths": {
-            "@components": ["src/app/services"],
-            "@services": ["src/app/components"],
+            "@components/*": ["src/app/components/*"],
+            "@services/*": ["src/app/services/*"],
             "@prettier": ["node_modules/prettier/esm/parser-angular.mjs"]
         }
     },

@@ -1,6 +1,8 @@
 .wrapper {
     --gap: 2rem;
-
+	
+	align-items: stretch;
+	
     padding-block: var(--shell--padding);
 
     nav {
