@@ -9,7 +9,7 @@ export class FakeService {
     }
 
     public generateError(): void {
-        throw new Error('Oh no! This an error ...');
+        throw new Error('Oh no! This is an error ...');
     }
 
     public doSomeHeavyTask(title: string): void {

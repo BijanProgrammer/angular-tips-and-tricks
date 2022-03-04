@@ -8,6 +8,12 @@ if (environment.production) {
     enableProdMode();
 }
 
+const originalWarn = console.warn;
+console.warn = (...data: any[]): void => {
+    if (data.some((x) => x.toString().toLowerCase().includes('license'))) return;
+    originalWarn(...data);
+};
+
 platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch((err) => console.error(err));

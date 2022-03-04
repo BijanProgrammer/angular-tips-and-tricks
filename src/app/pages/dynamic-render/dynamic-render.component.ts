@@ -14,7 +14,7 @@ export class DynamicRenderComponent {
     public content: SafeHtml = '';
 
     public constructor(private injector: Injector, private domSanitizer: DomSanitizer) {
-        this.definedCustomElements();
+        this.defineCustomElements();
     }
 
     public addButtonClickHandler(): void {
@@ -34,7 +34,7 @@ export class DynamicRenderComponent {
         `);
     }
 
-    private definedCustomElements(): void {
+    private defineCustomElements(): void {
         if (!customElements.get('add-element'))
             customElements.define('add-element', createCustomElement(AddComponent, {injector: this.injector}));
 

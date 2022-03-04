@@ -12,11 +12,11 @@ export class AppErrorHandler extends ErrorHandler {
             }
 
             const error = anyError as Error;
-            const name = error.name.toLowerCase();
+            const message = error.message.toLowerCase();
 
-            if (name.includes('license')) this.handleLicenseError(error);
-            else if (name.includes('ogma')) this.handleOgmaError(error);
-            else if (!name.includes('mapboxgl')) super.handleError(anyError);
+            if (message.includes('license')) this.handleLicenseError(error);
+            else if (message.includes('ogma')) this.handleOgmaError(error);
+            else if (!message.includes('mapboxgl')) super.handleError(anyError);
         } finally {
             console.groupEnd();
         }
