@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <h2>Dynamic Render</h2>
+
+    <div class="control-panel">
+        <button class="primary" (click)="addButtonClickHandler()">Add</button>
+        <button class="primary" (click)="multiplyButtonClickHandler()">Multiply</button>
+        <button class="primary" (click)="timeButtonClickHandler()">Time</button>
+    </div>
+
+    <div class="content" [innerHTML]="content"></div>
+</div>

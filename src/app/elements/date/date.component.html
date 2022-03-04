@@ -1,0 +1,4 @@
+<div>
+    <ng-container *ngIf="onlyShowTime">{{ date | date: 'HH:mm:ss' }}</ng-container>
+    <ng-container *ngIf="!onlyShowTime">{{ date | date: 'yyyy/MM/dd HH:mm:ss' }}</ng-container>
+</div>

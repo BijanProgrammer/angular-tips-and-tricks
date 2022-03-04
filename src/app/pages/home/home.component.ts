@@ -10,5 +10,6 @@ export class HomeComponent {
         {title: 'Custom Paths', link: 'custom-paths'},
         {title: 'Custom Error Handling', link: 'custom-error-handling'},
         {title: 'Virtual Scroll', link: 'virtual-scroll'},
+        {title: 'Dynamic Render', link: 'dynamic-render'},
     ];
 }

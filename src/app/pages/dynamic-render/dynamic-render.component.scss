@@ -1,0 +1,18 @@
+.wrapper {
+    height: 100%;
+
+    .control-panel {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .content {
+        flex: 1;
+
+        padding: 2rem;
+
+        border: 1px solid var(--color--border--fade);
+
+        font-family: monospace;
+    }
+}
