@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-// [TIP][CUSTOM PATH]
+// [TIP] Custom Path
 import {FakeService} from 'src/app/services/fake.service';
 
 @Component({
